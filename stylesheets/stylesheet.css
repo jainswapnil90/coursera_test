@@ -1,117 +1,71 @@
-/**********************************Start Base Styles*******************************/
-* {
-	box-sizing: border-box;
+/* Start Home Page Base Styles */
+
+*{
+	box-sizing : border-box;
+}
+body{
+	padding:0;
+	margin:0;
+}
+.section-container{ 
+	background-color: #939393;
 }
 
-body {
-	padding: 0;
-	margin: 0;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #606c71;
+.section-container{
+	margin: 0 10px 30px 10px;
+}
+ 
+#header-navbar{
+	background-color: #939393;
+	border:0;
+	border-radius:0;
+}
+#navbar-headerContainer > .navbar-brand{
+	font-size: 1.4em;
+    font-weight: 500;
+    color:#000;
 }
 
-h1 {
-	text-align: center;
+#nav-list {
+     margin-top: 0;
+     border: 1px solid #000;
 }
-
-.contentBox {
-	background-color: #545454;
-	text-align: left;
-	padding: 5px;
+#nav-list a {
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid black;
 }
-
-.sectionTitle {
-	float: right;
-	padding: 0px 10px;
-	text-align: center;
-	color: #000;
-	margin: -5px;
-	border-left: 2px solid black;
-	border-bottom: 2px solid black;
+#nav-list a:hover {
+  background: #E7E7E7;
 }
-
-.chicken {
-	background-color: #00ff00;
+#nav-list a span {
+  font-size: 1.8em;
 }
-
-.beef {
-	background-color: #ff0000;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000;
 }
-
-.sushi {
-	background-color: #0000ff;
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
-
-.contentSection {
-	clear: both;
+.navbar-header button.navbar-toggle{
+	clear: none; 
+   margin-top: 5px; 
 }
-
-/**********************************End Base Styles*******************************/
-
-/**********************************Start large Devices Styles***************************/
-@media ( min-width :992px) {
-	.container-fluid {
-		width: 100%;
-	}
-	.row {
-		width: 100%;
-	}
-	.col-lg-4 {
-		float: left;
-		border: 2px solid black;
-	}
-	.col-lg-4 {
-		width: 32%;
-		margin: 0.5%;
-	}
-}
-
-/**********************************End large Devices Styles***************************/
-
-/**********************************Start tablet Devices Styles***************************/
-@media  (min-width:768px) and ( max-width :991px) {
-	.container-fluid {
-		width: 100%;
-	}
-	.row {
-		width: 100%;
-	}
-	.col-md-6 , .col-md-12 {
-		float: left;
-		border: 2px solid black;
-	}
-	.col-md-6 {
-		width: 49%;
-		margin: 0.5%;
-	}
-	.col-md-12 {
-		width: 99%;
-		margin: 0.5%;
-	}
-}
-
-/**********************************End tablet Devices Styles***************************/
-
-/**********************************Start small Devices Styles***************************/
-@media ( max-width :767px) {
+/* End Home Page Base Styles */
+/*****************************Extra small Device Media Queries**********************/
+@media (max-width:767px){
 	
-	.container-fluid {
-		width: 100%;
-	}
-	.row {
-		width: 100%;
-	}
-	 .col-sd-12 {
-		float: left;
-		border: 2px solid black;
-	}
-	
-	.col-sd-12 {
-		width: 95%;
-		margin: 2.5%;
-	}
+ /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+   #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav{
+      background-color: #fff;
+      }
 }
-
-/**********************************End small Devices Styles***************************/
