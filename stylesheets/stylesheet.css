@@ -1,0 +1,71 @@
+/* Start Home Page Base Styles */
+
+*{
+	box-sizing : border-box;
+}
+body{
+	padding:0;
+	margin:0;
+}
+.section-container{ 
+	background-color: #939393;
+}
+
+.section-container{
+	margin: 0 10px 30px 10px;
+}
+ 
+#header-navbar{
+	background-color: #939393;
+	border:0;
+	border-radius:0;
+}
+#navbar-headerContainer > .navbar-brand{
+	font-size: 1.4em;
+    font-weight: 500;
+    color:#000;
+}
+
+#nav-list {
+     margin-top: 0;
+     border: 1px solid #000;
+}
+#nav-list a {
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid black;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-header button.navbar-toggle{
+	clear: none; 
+   margin-top: 5px; 
+}
+/* End Home Page Base Styles */
+/*****************************Extra small Device Media Queries**********************/
+@media (max-width:767px){
+	
+ /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+   #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav{
+      background-color: #fff;
+      }
+}
