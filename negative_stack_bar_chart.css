@@ -1,0 +1,16 @@
+.y path{
+    fill: none;
+    stroke: #000;
+}
+.y .tick line{
+    fill: none;
+    stroke: #000;
+}
+.x .tick line{
+    fill: none;
+    stroke: #000;
+}
+.x path{
+    fill: none;
+    stroke: black;
+}
