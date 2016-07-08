@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+ <meta name="Company" content="Tata Consultancy Services">
+ <meta name="keywords" content="HTML5,CSS,JavaScript">
+ <meta name="author" content="663745">
+<title>Negative Stack Bar Chart lego02</title>
+
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/negative_stack_bar_chart.js"></script>
+<script type="text/javascript" src="data/data_lego_02.js"></script>
+
+<link href="css/negative_stack_bar_chart.css" rel="stylesheet" type="text/css">
+
+<body>
+
+
+
+<div class="negativeStackContainerClass" id="negativestackcontainerid" style="width:50%"> <div>
+
+<script>
+
+
+//console.log(legorep02_data.data.dataset0);
+
+  var options={
+				svgWidth : 800,
+				svgHeight : 600,
+				isResponsive : true,
+				margin:{
+						"top": 40,
+						'right': 40, 
+						'left': 40,
+						'bottom': 120
+					},
+				chartTitle : 'Negative Stack Chart',
+				colorPalette : [ "#009DD9",  "#FF8300", "#B21DAC", "#D70036","#707276","#000000", "#9B0C10","#80076B","#F15722", "#007FC7","#8DC63F","#218535"],
+				xAxisProperties : {
+						dataKeys : 'TPRLABEL',
+						label : "X - Axis",
+						enableAxis : true,
+						labelRotation : -90,
+						enableGrid : true
+				},
+				yAxisProperties : {
+						dataKeys : ['FACT2','FACT3','FACT4'],
+						label : "Y - Axis",
+						enableAxis : true,
+						displayActualValue : true,
+						enableGrid : true
+				},
+				lineChartProperties : {
+						enableLineChart : true,
+						xAxisProperties : {
+									dataKeys : 'TPRLABEL'
+									},
+						yAxisProperties : {
+									datakeys : ['FACT1'],
+									displayActualValue : true
+									},
+						colorPalette : ["#F15722", "#007FC7","#8DC63F","#218535"]
+									
+				}
+		   };
+
+
+sj_chartLib.negativeStackChart("negativestackcontainerid",dataset.data.dataset0,options);
+
+
+
+</script>
+
+
+</body>
+
+</html>
